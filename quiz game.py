@@ -25,10 +25,19 @@ if q3.lower() == "London":
 else:
   print("Wrong, The correct answer is London")
 
-print(name + ", Your Final Score is:", score, "/3")
+q4 = input("4.What's 10 + 10? ")
+if q4.lower() == "20":
+  print("Correct")
+  score += 1
+else:
+  print("Wrong, The correct answer is 20")
 
-if score == 3:
+print(name + ", Your Final Score is:", score, "/4")
+
+if score == 4:
   print("Excellent")
+elif score == 3:
+  print("Very Good")
 elif score == 2:
   print("Good")
 elif score == 1:
